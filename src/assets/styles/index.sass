@@ -1,0 +1,172 @@
+#index
+  section.intro
+    height: 792px
+    position: relative
+    background-image: url('../images/hero-lg.png')
+    background-position: right
+    background-repeat: no-repeat
+    background-size: auto 100%
+    .introBox
+      width: fit-content
+      position: absolute
+      top: 198px
+      left: 262px
+      padding: 50px 50px 70px
+      background: var(--primary50)
+      h1
+        display: inline-block
+        margin-bottom: 24px
+      .sentence
+        display: flex
+        flex-direction: column
+        gap: 8px
+        p
+          display: inline-flex
+          gap: 8px
+          color: var(--primary600)
+          span
+            font-size: var(--fs5)
+            line-height: 1.2
+          .point
+            position: relative
+            z-index: 0
+            &::before
+              content: ''
+              width: 112%
+              height: 100%
+              position: absolute
+              right: -7.2%
+              bottom: -1px
+              z-index: -1
+              background-size: 100% 8px
+              background-image: url(../images/mark.png)
+              background-repeat: no-repeat
+              background-position: right bottom
+      .subtitle
+        margin-top: 16px
+        margin-bottom: 60px
+        font-size: var(--fs6)
+        line-height: 1.5
+        color: var(--primary400)
+      .others
+        display: flex
+        gap: 16px
+        a
+          width: 56px
+          height: 56px
+          svg
+            transition: all 0.3s ease-in-out
+            &:hover
+              fill: #F7AF5A
+              transform: scale(1.1)
+
+  section.portfolio
+    padding-top: 40px
+    .webIntro
+      width: 100%
+      height: 800px
+      position: relative
+      overflow: hidden
+      &.case1
+        .bgImg:first-child
+          width: 714px
+          height: 720px
+          bottom: 0
+          left: 16.25vw
+        .introCard
+          top: 50%
+          right: 16.25vw
+          transform: translateY(-50%)
+      &.case2
+        .bgImg::before
+          content: ''
+          width: 49.38vw
+          height: 100%
+          position: absolute
+          bottom: 0
+          left: 0
+          background-color: rgba(10, 16, 19, 0.5)
+        .introCard
+          top: 50%
+          left: 16.25vw
+          transform: translateY(-50%)
+      &.case3
+        &::before
+          content: ''
+          width: 100%
+          height: 100%
+          position: absolute
+          bottom: 0
+          left: 0
+          background-color: rgba(13, 12, 7, 0.5)
+          z-index: 1
+        .bgImg
+          &:first-child
+            width: 721px
+            height: 512px
+            top: 190px
+            left: 16.25vw
+        .introCard
+          top: 50%
+          right: 16.25vw
+          transform: translateY(-50%)
+      .bgImg
+        position: absolute
+        &:first-child
+          z-index: 1
+        &:last-child
+          z-index: 0
+      .introCard
+        width: 100%
+        max-width: 526px
+        padding: 80px 40px 56px 40px
+        position: absolute
+        z-index: 2
+        background-color: rgba(255,255,255,0.1)
+        border-radius: 24px
+        color: var(--primary50)
+        backdrop-filter: blur(8px)
+        h3
+          margin-bottom: 8px
+        .subTitle
+          margin-bottom: 24px
+          font-size: var(--fs6)
+          line-height: 1.5
+        .tagGroup
+          display: flex
+          gap: 16px
+          margin-bottom: 40px
+          .tag
+            padding: 4px 12px
+            font-size: var(--fs6)
+            line-height: 1.5
+            border-radius: 16px
+            color: var(--primary700)
+            background-color: var(--primary50)
+            cursor: pointer
+            user-select: none
+        hr
+          margin-bottom: 40px
+          border: none
+          border-bottom: 1px solid var(--primary200)
+        .primaryBtn
+          width: fit-content
+          display: flex
+          margin: 0 auto
+
+  section.services
+    text-align: center
+    background-image: url(../images/homepage-services-bg.png)
+    background-size: contain
+    .allService
+      margin-bottom: 80px
+      display: flex
+      justify-content: center
+      gap: 24px
+    h3
+      margin-bottom: 40px
+
+  section.featured
+    .sliderArticle
+      width: 100%
+      max-width: 1296px

@@ -1,0 +1,57 @@
+footer
+  width: 100%
+  min-height: 424px
+  padding: 80px 16.25vw
+  display: flex
+  justify-content: space-between
+  background-size: auto 100%
+  background-image: url(../images/footer-bg-lg.png)
+  background-repeat: no-repeat
+  .area
+    display: flex
+    flex-direction: column
+    gap: 24px
+    a.logo
+      width: 120px
+      height: 54px
+    .info
+      p
+        font-size: var(--fs5)
+        line-height: 1.5
+        color: var(--primary700)
+    .subInfo
+      a
+        text-decoration: none
+        line-height: 1.2
+        color: var(--primary500)
+        transition: all .3s ease-in-out
+        &:hover
+          color: var(--primary700)
+    a.button
+      display: flex
+      align-items: center
+      justify-content: start
+      gap: 8px
+      padding: 8px 59px 8px 24px
+      border-radius: 8px
+      color: var(--primary900)
+      background-color: var(--primary50)
+      border: 1px solid var(--primary400)
+      cursor: pointer
+      transition: all 0.3s ease-in-out
+      &:hover, &.point
+        color: var(--primary50)
+        background-color: var(--primary900)
+        border: 1px solid transparent
+        svg
+          fill: var(--primary400)
+      svg
+        fill: var(--primary600)
+        width: 56px
+        height: 56px
+        display: flex
+        align-items: center
+        justify-content: center
+      p
+        font-size: var(--fs5)
+        line-height: 1.5
