@@ -25,7 +25,7 @@ export default {
           designPrinciple: '宇宙旅行、深色背景、強烈視覺效果',
           developmentMethod: 'Bootstrap、Javascript、RWD',
           websiteContent:
-            "<figure><img src='/images/modal-image1.png'><h4>主視覺</h4><figcaption>可直接設定日期、起迄星球、張數，快速查詢可購買的票券。</figcaption></figure><figure><img src='/images/modal-image2.png'><h4>推薦查詢</h4><figcaption>給予最快起飛，以及最熱門的景點推薦，協助使用者進行選擇。</figcaption></figure>"
+            "<figure><img src='./images/modal-image1.png'><h4>主視覺</h4><figcaption>可直接設定日期、起迄星球、張數，快速查詢可購買的票券。</figcaption></figure><figure><img src='./images/modal-image2.png'><h4>推薦查詢</h4><figcaption>給予最快起飛，以及最熱門的景點推薦，協助使用者進行選擇。</figcaption></figure>"
         },
         {
           title: '理財App',
@@ -39,7 +39,7 @@ export default {
           designPrinciple: '數據呈現簡潔易懂、畫面簡約乾淨',
           developmentMethod: 'Figma、React、Javascript',
           websiteContent:
-            "<figure><img src='/images/work-image2.png'><h4>主視覺</h4><figcaption>以藍色作為主調，配以簡潔易懂的數據呈現。</figcaption></figure>"
+            "<figure><img src='./images/work-image2.png'><h4>主視覺</h4><figcaption>以藍色作為主調，配以簡潔易懂的數據呈現。</figcaption></figure>"
         },
         {
           title: '醫美診所官網',
@@ -52,7 +52,7 @@ export default {
           designPrinciple: '精緻專業、風格古典優雅',
           developmentMethod: 'Bootstrap、Javascript、RWD',
           websiteContent:
-            "<figure><img src='/images/work-image3.png'><h4>主視覺</h4><figcaption>以精緻洗鍊的風格引導訪客閱讀網站資訊。</figcaption></figure>"
+            "<figure><img src='./images/work-image3.png'><h4>主視覺</h4><figcaption>以精緻洗鍊的風格引導訪客閱讀網站資訊。</figcaption></figure>"
         },
         {
           title: '美美美早餐店 POS 機 UI Design',
@@ -66,7 +66,7 @@ export default {
           designPrinciple: '深色背景、資訊呈現明確',
           developmentMethod: 'Figma、Javascript、RWD',
           websiteContent:
-            "<figure><img src='/images/work-image4.png'><h4>主視覺</h4><figcaption>以深色背景呈現訂單資訊及相關營業報表。</figcaption></figure>"
+            "<figure><img src='./images/work-image4.png'><h4>主視覺</h4><figcaption>以深色背景呈現訂單資訊及相關營業報表。</figcaption></figure>"
         },
         {
           title: '電影院訂票系統',
@@ -79,7 +79,7 @@ export default {
           designPrinciple: '以圖片引導視覺為主要目的、操作介面流暢不卡頓',
           developmentMethod: 'Vue、Javascript、RWD',
           websiteContent:
-            "<figure><img src='/images/work-image5.png'><h4>主視覺</h4><figcaption>直接設定日期、地點、張數，快速訂購可購買的票券。</figcaption></figure>"
+            "<figure><img src='./images/work-image5.png'><h4>主視覺</h4><figcaption>直接設定日期、地點、張數，快速訂購可購買的票券。</figcaption></figure>"
         },
         {
           title: '巧克巧克形象官網設計',
@@ -93,7 +93,7 @@ export default {
           designPrinciple: '淺色背景、高圖片畫質',
           developmentMethod: 'Figma、Javascript、RWD',
           websiteContent:
-            "<figure><img src='/images/work-image6.png'><h4>主視覺</h4><figcaption>適度留白以凸顯照片提供的商品資訊。</figcaption></figure>"
+            "<figure><img src='./images/work-image6.png'><h4>主視覺</h4><figcaption>適度留白以凸顯照片提供的商品資訊。</figcaption></figure>"
         }
       ],
       modalState: {

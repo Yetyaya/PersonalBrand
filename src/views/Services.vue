@@ -51,7 +51,7 @@ export default {
           designPrinciple: '深色背景、資訊呈現明確',
           developmentMethod: 'Figma、Javascript、RWD',
           websiteContent:
-            "<figure><img src='/images/work-image4.png'><h4>主視覺</h4><figcaption>以深色背景呈現訂單資訊及相關營業報表。</figcaption></figure>"
+            "<figure><img src='./images/work-image4.png'><h4>主視覺</h4><figcaption>以深色背景呈現訂單資訊及相關營業報表。</figcaption></figure>"
         },
         {
           title: '巧克巧克形象官網設計',
@@ -65,7 +65,7 @@ export default {
           designPrinciple: '淺色背景、高圖片畫質',
           developmentMethod: 'Figma、Javascript、RWD',
           websiteContent:
-            "<figure><img src='/images/work-image6.png'><h4>主視覺</h4><figcaption>適度留白以凸顯照片提供的商品資訊。</figcaption></figure>"
+            "<figure><img src='./images/work-image6.png'><h4>主視覺</h4><figcaption>適度留白以凸顯照片提供的商品資訊。</figcaption></figure>"
         },
         {
           title: '電影院訂票系統',
@@ -78,7 +78,7 @@ export default {
           designPrinciple: '以圖片引導視覺為主要目的、操作介面流暢不卡頓',
           developmentMethod: 'Vue、Javascript、RWD',
           websiteContent:
-            "<figure><img src='/images/work-image5.png'><h4>主視覺</h4><figcaption>直接設定日期、地點、張數，快速訂購可購買的票券。</figcaption></figure>"
+            "<figure><img src='./images/work-image5.png'><h4>主視覺</h4><figcaption>直接設定日期、地點、張數，快速訂購可購買的票券。</figcaption></figure>"
         },
         {
           title: '2023 餉茶坊飲料旗艦店活動官網設計',
@@ -92,7 +92,7 @@ export default {
           designPrinciple: '顏色鮮亮、吸引注意力在飲品上',
           developmentMethod: 'Figma、Javascript',
           websiteContent:
-            "<figure><img src='/images/work-image7.png'><h4>主視覺</h4><figcaption>以橙色為主，帶出本季主打水果飲品。</figcaption></figure>"
+            "<figure><img src='./images/work-image7.png'><h4>主視覺</h4><figcaption>以橙色為主，帶出本季主打水果飲品。</figcaption></figure>"
         }
       ],
       problemArr: [
