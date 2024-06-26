@@ -8,7 +8,6 @@ export default {
   },
   data() {
     return {
-      s: process.env.NODE_ENV,
       navArr: [
         { name: '首頁', path: '/' },
         { name: '作品集', path: '/portfolio' },
@@ -24,17 +23,16 @@ export default {
 <template lang="pug">
   //- 導覽列
   .nav
-    RouterLink.logo(to='/')
-      img(src="/images/logo.svg", alt="logo")
-    ul.menu
-      //- p {{ s }}
-      li(v-for='(item, id) in navArr' :class='{ active: item.path ==  $route.path }')
-        RouterLink(:to='item.path') {{ item.name }}
-        .cornerGroup 
-          .corner
-          .corner
-          .corner
-          .corner
+    .container
+      RouterLink.logo(to='/')
+        img(src="/images/logo.svg", alt="logo")
+      .menu
+        RouterLink(v-for='(item, id) in navArr' :class='{ active: item.path ==  $route.path }' :to='item.path') {{ item.name }}
+          .cornerGroup 
+            .corner
+            .corner
+            .corner
+            .corner
   //- 頁面內容
   RouterView
   //- 頁尾

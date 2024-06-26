@@ -12,7 +12,7 @@ export default {
 <template lang="pug">
 .card
   .imgBlock
-    img(:src='"./images/" + cardInfo.img', :alt='cardInfo.title')
+    img(:src='"./images/" + cardInfo.img' :alt='cardInfo.title')
   .info
     h3 {{ cardInfo.title }}
     .subTitle {{ cardInfo.subTitle }}
@@ -32,8 +32,7 @@ export default {
       transform: scale(1.1) rotate(2deg)
   .imgBlock
     width: 100%
-    max-width: 33.13vw
-    height: 20.83vw
+    height: 400px
     position: relative
     overflow: hidden
     border-radius: 8px

@@ -251,7 +251,7 @@ export default {
   section#map
   section.contact
     h2.sectionTitle 歡迎來信聯絡
-    .content
+    .container
       .companyInfo
         h3 讓我們建立聯繫
         .contactData

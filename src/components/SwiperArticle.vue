@@ -30,7 +30,8 @@ export default {
 </script>
 
 <template lang="pug">
-section.OtherPaper
+section.otherPaper.container
+  hr
   h3 最新文章
   Swiper.sliderArticle(
     :modules='modules'

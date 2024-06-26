@@ -1,6 +1,6 @@
 .nav
   min-height: 96px
-  padding: 32px 16.25vw
+  padding: 32px 0
   position: sticky
   top: 0
   backdrop-filter: blur(5px)
@@ -13,21 +13,20 @@
     top: 50%
     left: 16.25vw
     transform: translateY(-50%)
-  ul
+  .menu
     position: absolute
     left: 50%
     transform: translateX(-50%)
     display: inline-flex
     gap: 20px
     color: var(--primary900)
-    li
+    a
       position: relative
       z-index: 0
-      padding: 8px
-      a
-        font-size: var(--fs6)
-        color: currentColor
-        transition: all .3s ease-in-out
+      padding: 5px 8px
+      font-size: var(--fs6)
+      color: currentColor
+      transition: all .3s ease-in-out
       .cornerGroup
         .corner
           width: 8px

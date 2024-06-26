@@ -1,8 +1,5 @@
 #blog
   section
-    width: 100%
-    max-width: 1296px
-    margin: 0 auto
     .subtitle
       margin-top: -56px
       margin-bottom: 80px
@@ -56,11 +53,26 @@
     text-align: center
     color: var(--primary600)
     background-color: var(--primary100)
-  section.OtherPaper
-    border-top: 1px solid var(--primary400)
+  section.otherPaper
+    hr
+      display: block
+      margin-bottom: 40px
+      border: none
+      border-top: 1px solid var(--primary400)
     h3
-      margin: 40px 0
-      color: var(--primary700)
+      display: block
+
+section.otherPaper
+  display: flex
+  flex-direction: column
+  gap: 40px
+  hr
+    display: none
+  .swiper
+    width: 100%
+  h3
+    display: none
+    color: var(--primary700)
 
 .postContent
   width: 100%

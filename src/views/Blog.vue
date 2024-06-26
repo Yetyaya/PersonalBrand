@@ -45,7 +45,7 @@ export default {
 
 <template lang="pug">
 #blog
-  section.blog
+  section.blog.container
     h2.sectionTitle 部落格
     p.subtitle 不定期分享技術文章
     .container
@@ -54,6 +54,6 @@ export default {
         ul
           li(v-for='(item, id) in blogNav' @click='changeArticle(item)')
             RouterLink.logo(to='/blog' :class='{ active: currentTag === item }') {{ item }}
-  div
+  .container
     RouterView(name='OtherPaper' :swiperOption='swiperOption')
 </template>

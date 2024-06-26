@@ -9,6 +9,22 @@
 ::selection
   background: var(--primary400)
 
+// 捲軸
+
+// 捲軸寬度
+::-webkit-scrollbar
+  width: 4px
+  background-color: var(--primary300)
+  border-radius: 4px
+// 捲軸本體顏色
+::-webkit-scrollbar-thumb 
+  background-color: var(--primary700)
+  border-radius: 4px
+//捲軸底色
+::-webkit-scrollbar-track
+  background-color: var(--primary300)
+  border-radius: 4px
+
 body
   min-height: 100vh
   transition: color 0.5s, background-color 0.5s
@@ -40,7 +56,7 @@ a
   text-decoration: none
 
 section
-  padding: 40px 0 120px
+  padding: 40px 24px 120px
   .sectionTitle
     margin: 80px auto
     text-align: center
@@ -60,6 +76,12 @@ section
     &::after
       margin-left: 16px
       background-image: url(../images/title-deco-right-lg.png)
+
+.container
+  width: 100%
+  max-width: 1296px
+  margin-right: auto
+  margin-left: auto 
 
 .primaryBtn
   display: inline-flex

@@ -89,7 +89,7 @@ export default {
         .tagGroup
           .tag(v-for='(tag, tagId) in item.tagArr') {{ tag }}
         hr
-        a.primaryBtn(href="") 
+        RouterLink.primaryBtn(to='portfolio')
           span 完整介紹
           SvgIcon(name='arrow')
   section.services
@@ -98,10 +98,13 @@ export default {
       template(v-for='(item, id) in serviceArr')
         ServiceItem(:serviceInfo='item')
     h3 想要合作或瞭解更多？
-    a.primaryBtn(href="") 
+    RouterLink.primaryBtn(to='services') 
       span 詳細內容與合作流程
       SvgIcon(name='arrow')
   section.featured
     h2.sectionTitle 精選文章
     SwiperArticle(:swiperOption='swiperOption')
+    RouterLink.primaryBtn(to='blog')
+      span 更多文章
+      SvgIcon(name='arrow')
 </template>
