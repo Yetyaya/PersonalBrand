@@ -19,7 +19,7 @@ export default {
 			.tag {{ blogInfo.tag }}
 		h5.title
 			RouterLink(:to='`/blog/posts/${blogInfo.id}`') {{ blogInfo.title }}
-		p {{ blogInfo.content }}
+		p.ellipsis {{ blogInfo.content }}
 </template>
 
 <style lang="sass" scope>

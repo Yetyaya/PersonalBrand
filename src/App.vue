@@ -14,7 +14,14 @@ export default {
         { name: '服務項目', path: '/services' },
         { name: '部落格', path: '/blog' },
         { name: '聯絡我', path: '/contact' }
-      ]
+      ],
+      hamburger: false
+    }
+  },
+  watch: {
+    hamburger(newVal, oldVal) {
+      if (newVal) document.body.style.overflow = 'hidden'
+      else document.body.style.overflow = 'auto'
     }
   }
 }
@@ -33,6 +40,18 @@ export default {
             .corner
             .corner
             .corner
+      .hamburger(:class='{ active: hamburger }' @click='hamburger = !hamburger')
+        .hamburgerBox
+          .hamburgerInner
+  .hamburgerMenu(:class='{ hide: !hamburger }')
+    .maskBg
+    .menu
+      RouterLink(v-for='(item, id) in navArr' :class='{ active: item.path ==  $route.path }' :to='item.path' @click='hamburger = !hamburger') {{ item.name }}
+        .cornerGroup 
+          .corner
+          .corner
+          .corner
+          .corner
   //- 頁面內容
   RouterView
   //- 頁尾

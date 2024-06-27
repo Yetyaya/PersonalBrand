@@ -45,15 +45,19 @@ export default {
 
 <template lang="pug">
 #blog
-  section.blog.container
+  section.blog
     h2.sectionTitle 部落格
     p.subtitle 不定期分享技術文章
+    .slideMenu
+      ul
+        li(v-for='(item, id) in blogNav' @click='changeArticle(item)')
+          RouterLink(to='/blog' :class='{ active: currentTag === item }') {{ item }}
     .container
       RouterView(:blogArr='blogArr')
       .blogNav
         ul
           li(v-for='(item, id) in blogNav' @click='changeArticle(item)')
-            RouterLink.logo(to='/blog' :class='{ active: currentTag === item }') {{ item }}
+            RouterLink(to='/blog' :class='{ active: currentTag === item }') {{ item }}
   .container
     RouterView(name='OtherPaper' :swiperOption='swiperOption')
 </template>

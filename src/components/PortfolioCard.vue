@@ -63,7 +63,7 @@ export default {
         font-size: var(--fs6)
         white-space: nowrap
         color: var(--primary700)
-        background-color: var(--primary200)
+        background-color: var(--primary300)
         border-radius: 16px
         cursor: pointer
         transition: all 0.3s ease-in-out

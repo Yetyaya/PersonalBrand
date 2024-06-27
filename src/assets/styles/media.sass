@@ -1,4 +1,204 @@
+@media (max-width: 1200px)
+	section
+		padding: 40px 24px 120px
+	
+	.nav .logo
+		left: 24px
+
+	#index
+		section.intro
+			padding-bottom: 0
+			min-height: calc(100vw * 285 / 375)
+			background-image: url(../images/hero-sm.png)
+			background-size: 100%
+			background-position: top center
+			.introBox
+				width: 100%
+				position: static
+				padding: 40px
+				margin-top: calc(100vw * 285 / 375)
+				text-align: center
+				.sentence
+					align-items: center
+				.others
+					justify-content: center
+		section.portfolio
+			.webIntro
+				&.case1
+					.bgImg:first-child
+						left: 3vw
+					.introCard
+						right: 3vw
+				&.case2
+					.introCard
+						left: 3vw
+				&.case3
+					.bgImg
+						&:first-child
+							left: 3vw
+					.introCard
+						right: 3vw
+		section.services .allService
+			flex-wrap: wrap
+
+	#blog section
+		.blogList
+			width: 644px
+			.blogArticle
+				gap: 40px
+				.blogCard
+					height: fit-content
+					flex-direction: column
+					.blogImg img
+						width: 100%
+						transform: scale(1.03)
+						&:hover
+							transform: scale(1.13)
+					.blogContent
+						max-width: 100%
+						.subInfo
+							justify-content: space-between
+						
 @media (max-width: 768px)
+	.nav
+		min-height: 72px
+		.menu
+			display: none
+	.hamburger
+		display: inline-block
+
+	#index
+		section.portfolio
+			.webIntro
+				height: fit-content
+				display: flex
+				flex-direction: column
+				.bgBox
+					height: 390px
+					position: relative
+				&.case1, &.case2, &.case3
+					.introCard
+						width: 100%
+						max-width: 100%
+						padding: 24px 24px 48px
+						display: flex
+						flex-direction: column
+						align-items: center
+						position: unset
+						transform: none
+						h3
+							margin-bottom: 8px
+							font-size: var(--fs5)
+							color: var(--primary800)
+						.subTitle
+							margin-bottom: 16px
+							color: var(--primary600)
+						.tagGroup
+							margin-bottom: 20px
+							.tag
+								background-color: var(--primary200)
+						hr
+							display: none
+				&.case1
+					.bgImg:first-child
+						width: calc(714*(100vh - 96px)* 0.55 / 720)
+						height: calc((100vh - 96px)* 0.55)
+						left: 50%
+						transform: translateX(-50%)
+				&.case2
+					.bgImg::before
+						display: none
+				&.case3
+					&::before
+						height: 390px
+						top: 0
+					.bgImg
+						&:first-child
+							width: calc(721*(100vh - 96px)* 0.45 / 512)
+							height: calc((100vh - 96px)* 0.45)
+							left: 50%
+							transform: translateX(-50%)
+					.introCard
+						right: 3vw
+	
+	footer
+		padding: 40px 34.5px 60px
+		.container
+			flex-direction: column
+			align-items: center
+			gap: 40px
+			.area
+				width: 100%
+				align-items: center
+				.info p
+					font-size: var(--fs6)
+					line-height: 1.875
+				a.button
+					width: 100%
+
+	#portfolio
+		section.title
+			padding: 80px 37.5px
+			.container
+				padding: 0
+	
+	#portfolio section.content, #service section.case
+		.work
+			justify-content: center
+			.card
+				width: 100%
+				max-width: 636px
+				.info .tagGroup
+					margin-top: 12px
+					transform: translateX(-4px)
+
+	#service section.problem ul
+		justify-content: center
+		li
+			width: 100%
+			max-width: 526px
+
+	section.blog
+		padding: 40px 0px 120px
+		.container
+			padding: 40px 34.5px 80px
+	.blogNav
+		display: none
+	.slideMenu
+		display: block
+
+	section.contact
+		padding: 0px 24px 80px
+		.container
+			flex-direction: column
+			align-items: center
+			gap: 16px
+			.companyInfo
+				width: 100%
+				display: flex
+				align-items: center
+				gap: 24px
+				h3
+					font-size: var(--fs5)
+				.contactData
+					display: flex
+					flex-direction: column
+					align-items: center
+					a
+						font-size: var(--fs6)
+				.other
+					display: flex
+					flex-direction: column
+					align-items: center
+					p
+						font-size: var(--fs6)
+						color: var(--primary500)
+			.customInfo
+				width: 100%
+				form button
+					width: 100%
+					justify-content: center
+			
 
 @media (max-width: 767px)
 

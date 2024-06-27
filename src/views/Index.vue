@@ -81,8 +81,9 @@ export default {
   section.portfolio
     h2.sectionTitle 作品介紹
     .webIntro(v-for='(item, id) in portfolioArr' :class='`case${id + 1}`')
-      .bgImg(v-for='(img, imgId) in item.img')
-        img(:src='"./images/" + img' :alt="img")
+      .bgBox
+        .bgImg(v-for='(img, imgId) in item.img')
+          img(:src='"./images/" + img' :alt="img")
       .introCard
         h3.title {{ item.title }}
         .subTitle {{ item.subTitle }}

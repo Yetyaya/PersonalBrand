@@ -1,6 +1,6 @@
 #index
   section.intro
-    height: 792px
+    min-height: 792px
     position: relative
     background-image: url('../images/hero-lg.png')
     background-position: right
@@ -16,6 +16,7 @@
       h1
         display: inline-block
         margin-bottom: 24px
+        color: var(--primary700)
       .sentence
         display: flex
         flex-direction: column
@@ -61,16 +62,16 @@
               transform: scale(1.1)
 
   section.portfolio
-    padding: 40px 0 120px
+    padding: 40px 0 0
     .webIntro
       width: 100%
-      height: 800px
+      height: calc(100vh - 96px)
       position: relative
       overflow: hidden
       &.case1
         .bgImg:first-child
-          width: 714px
-          height: 720px
+          width: calc(714 * (100vh - 96px) * 0.9 / 720)
+          height: calc((100vh - 96px) * 0.9)
           bottom: 0
           left: 16.25vw
         .introCard
@@ -102,16 +103,21 @@
           z-index: 1
         .bgImg
           &:first-child
-            width: 721px
-            height: 512px
-            top: 190px
+            width: calc(721 * (100vh - 96px) * 0.63 / 512)
+            height: calc((100vh - 96px) * 0.63)
+            top: 19%
             left: 16.25vw
         .introCard
           top: 50%
           right: 16.25vw
           transform: translateY(-50%)
+      .bgBox
+        width: 100%
       .bgImg
+        height: 100%
         position: absolute
+        img
+          height: 100%
         &:first-child
           z-index: 1
         &:last-child
